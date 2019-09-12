@@ -8,7 +8,8 @@ const Menu = electron.Menu;
 const BrowserWindow = electron.BrowserWindow;
 
 let mainWindow: electron.BrowserWindow;
-
+// tslint:disable-next-line:no-var-requires
+require('update-electron-app')();
 const createWindow = () => {
 
     mainWindow = new BrowserWindow({
